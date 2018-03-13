@@ -1,0 +1,171 @@
+.ink-modal-boundingBox {
+  position: fixed;
+  border: 1px solid #000;
+  box-shadow: 0 0 12px rgba(0, 0, 0, .5);
+  background: #fff;
+  z-index: 1000;
+}
+
+.ink-modal-mask {
+  width: 100%;
+  height: 100%;
+  background: #000;
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.ink-modal-alertBtn {
+  width: 100px;
+  padding: 5px 0;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  margin-left: -50px;
+}
+
+.ink-modal-header {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 5px;
+  font-size: 20px;
+}
+
+.ink-modal-body {
+  padding: 10px;
+}
+
+.ink-modal-closeBtn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 5px 10px;
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.move {
+  cursor: move;
+}
+
+.ink-modal-footer {
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+.ink-modal-cancelBtn {
+  margin-left: 20px;
+}
+
+.ink-modal-promptInputWrapper {
+  text-align: center;
+}
+
+.ink-modal-content-wrap {
+  display: block;
+}
+
+.ink-modal-boundingBox input[type="button"], .ink-modal-boundingBox button {
+  cursor: pointer;
+}
+
+.ink-modal-boundingBox.effect1 {
+  -webkit-transform: scale(0.7);
+  -moz-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  transform: scale(0.7);
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease, -webkit-transform 0.3s ease;
+  -moz-transition: opacity 0.3s ease, -moz-transform 0.3s ease;
+  -ms-transition: opacity 0.3s ease, -ms-transform 0.3s ease;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.ink-modal-boundingBox.ink-modal-show.effect1 {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+}
+
+.ink-modal-boundingBox.effect2 {
+  -webkit-transform: translate(0, -25%);
+  -ms-transform: translate(0, -25%);
+  -moz-transform: translate(0, -25%);
+  -o-transform: translate(0, -25%);
+  transform: translate(0, -25%);
+  opacity: 0;
+  -webkit-transition: opacity .3s ease-out, -webkit-transform 0.3s ease-out;
+  -moz-transition: opacity .3s ease-out, -moz-transform 0.3s ease-out;
+  -o-transition: opacity .3s ease-out, -o-transform 0.3s ease-out;
+  transition: opacity .3s ease-out, transform 0.3s ease-out;
+}
+
+.ink-modal-boundingBox.ink-modal-show.effect2 {
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  transform: translate(0, 0);
+  opacity: 1;
+}
+
+.ink-modal-boundingBox.ink-modal-show~.ink-modal-mask {
+  visibility: visible;
+  opacity: 0.3;
+}
+
+
+
+/* skin for a */
+
+.ink-modal-skin-a.ink-modal-boundingBox {
+  box-shadow: none;
+  border: 10px solid rgba(0, 0, 0, .3);
+  border-radius: 8px;
+}
+
+.ink-modal-skin-a .ink-modal-alertBtn {
+  width: 50px;
+  left: auto;
+  right: 20px;
+  margin-left: 0;
+  background: #6984a6;
+  border: none;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.ink-modal-skin-a .ink-modal-header {
+  background: #6984a6;
+  text-align: left;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.ink-modal-skin-a .ink-modal-closeBtn {
+  width: 45px;
+  height: 45px;
+  border-radius: 45px;
+  line-height: 45px;
+  padding: 0;
+  text-align: center;
+  background: #4a4a61;
+  font-size: 24px;
+  font-weight: bold;
+  right: -15px;
+  top: -15px;
+}
